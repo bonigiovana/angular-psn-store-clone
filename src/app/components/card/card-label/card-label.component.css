@@ -1,18 +1,24 @@
 .card-label__container{
-	position: absolute;
-	bottom:90px;
-	right: 0;
+	position:absolute;
+	top: 12px;
+	right: 10px;
+	background: rgba(5, 50, 88, 0.85);
+	color: aliceblue;
+	padding: 4px 10px;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	backdrop-filter: blur(4px);
+	border: 1px solid rgba(161, 203, 212, 0.5);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+	z-index: 3;
 }
 
-.card-label__content{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #0d0d0d;
-	color: white;
-	font-size: 12px;
-	font-family: 'Segoe UI';
-	font-weight: bold;
-	height: 40px;
-	padding: 0px 50px;
+app-card-label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
 }

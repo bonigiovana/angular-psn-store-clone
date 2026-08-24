@@ -1,44 +1,134 @@
-.menu-bar__container{
-	display: flex;
-	flex-direction: row;
-	position: fixed;
-	z-index: 999;
-	background-color: #ffffff;
-	width: 100%;
-	height: 40px;
-	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+.menu-bar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  padding: 0 35px;
+  background-color: #070d19;
+  border-bottom: 1px solid rgba(0, 112, 209, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.menu-bar__logo{
-  margin-left: 30px;
+/* Logo Brilhante e Clara */
+.menu-bar__logo img {
+  object-fit: contain;
+  filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(0, 162, 255, 0.7));
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-bar__logo img:hover {
+  transform: scale(1.06);
+  filter: brightness(0) invert(1) drop-shadow(0 0 12px rgba(0, 210, 255, 1));
+}
+
+/* Nav Links */
+.menu-bar__nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar__nav a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.menu-bar__nav a:hover,
+.menu-bar__nav a.active {
+  color: #00a2ff;
+  border-bottom: 2px solid #00a2ff;
+  padding-bottom: 4px;
+}
+
+/* Campo de Busca */
+.menu-bar__search {
+  position: relative;
   display: flex;
   align-items: center;
+  width: 320px;
 }
 
-.menu-bar__item{
+.search-icon {
+  position: absolute;
+  left: 12px;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.menu-bar__search input {
+  width: 100%;
+  padding: 8px 12px 8px 36px;
+  background-color: rgba(18, 25, 41, 0.8);
+  border: 1px solid rgba(0, 112, 209, 0.4);
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.menu-bar__search input:focus {
+  border-color: #00a2ff;
+  box-shadow: 0 0 10px rgba(0, 162, 255, 0.4);
+}
+
+/* Área de Usuário e Carrinho */
+.menu-bar__user {
   display: flex;
-  margin:auto;
   align-items: center;
+  gap: 20px;
 }
 
-.menu-bar__item > ul{
-	display: flex;
-	list-style-type: none;
+.notification-icon, .cart-icon {
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.menu-bar__item > ul > li {
-	padding: 5px;
-	margin-right: 15px;
+.notification-icon:hover, .cart-icon:hover {
+  transform: scale(1.15);
 }
 
-.menu-bar__item > ul > li > a {
-	text-decoration: none;
-	padding: 5px;
-	color: rgb(7, 7, 7);
-	font-family: 'Segoe UI';
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
-.menu-bar__item > ul > li > a:hover {
-	color: blue;
-	font-weight: 600;
+.avatar-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00a2ff;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.user-balance {
+  color: #00a2ff;
+  font-size: 11px;
+  font-weight: 600;
 }

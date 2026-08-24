@@ -1,10 +1,63 @@
-.home__container{
-	width: 90%;
-	margin: auto;
-	padding-top: 50px;
-	display: flex;
-
-	justify-content: space-around;
-	align-items: baseline;
-	flex-wrap: wrap;
+/* Container principal dos jogos */
+.home__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px 20px;
+	width: 96%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
+
+/* Seção Explore the Store */
+.explore-section {
+  width: 95%;
+  max-width: 1400px;
+  margin: 35px auto 15px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.explore-title {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Pílulas de Filtro */
+.filter-pills {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pill-btn {
+  background-color: rgba(18, 25, 41, 0.8);
+  color: #ffffff;
+  border: 1px solid rgba(0, 112, 209, 0.4);
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pill-btn:hover {
+  border-color: #00d2ff;
+  background-color: rgba(0, 112, 209, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.3);
+}
+
+.pill-btn.active {
+  background: linear-gradient(135deg, #0070d1 0%, #00d2ff 100%);
+  border-color: #00d2ff;
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.6);
+}
+

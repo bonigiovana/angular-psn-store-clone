@@ -1,0 +1,36 @@
+<div class="hero-banner__container">
+  <!-- Imagem Grande de Fundo Cinemático -->
+  <img [src]="heroCover" [alt]="heroTitle" class="hero-banner__bg">
+  <div class="hero-banner__overlay"></div>
+
+  <!-- Lado Esquerdo: Título, Subtítulo e Botões -->
+  <div class="hero-banner__content">
+    <h1 class="hero-banner__title">{{ heroTitle || 'FINAL FANTASY VII REBIRTH' }}</h1>
+    <p class="hero-banner__subtitle">{{ heroSubtitle || 'Discover a Vast, Sprawling World' }}</p>
+
+    <div class="hero-banner__actions">
+      <a [href]="heroUrl || '#'" target="_blank" rel="noopener noreferrer" class="btn-buy-neon">
+        COMPRAR NA PS STORE ({{ heroPrice || 'R$ 349,90' }})
+      </a>
+    </div>
+  </div>
+
+  <!-- Lado Direito: Cardzinho do Player que abre direto no YouTube oficial -->
+  <a
+    href="https://www.youtube.com/watch?v=QkkoHAzjnUs"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="hero-banner__trailer-card"
+  >
+    <div class="trailer-preview">
+      <img [src]="heroCover" alt="Trailer Preview">
+      <div class="play-overlay">
+        <span class="play-icon">▶</span>
+      </div>
+      <span class="video-time">0:24 / 2:15</span>
+    </div>
+    <div class="btn-watch-trailer">
+      ASSISTA AO TRAILER <span class="play-arrow">▶</span>
+    </div>
+  </a>
+</div>

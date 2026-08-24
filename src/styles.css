@@ -1,12 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+/* 1. Rset CSS Global */
 *{
 	padding: 0;
 	margin: 0;
 	border: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
+/*2; Variaveis de Cores da Playstation*/
+	:root {
+  --primary-color: #0070d1;    /* Azul PlayStation (botões e links) */
+  --secondary-color: #00439c;  /* Azul Escuro (detalhes) */
+  --bg-dark: #070d19;          /* Fundo escuro da página */
+  --card-bg: #121929;          /* Fundo dos cards dos jogos */
+  --text-light: #ffffff;       /* Texto principal (branco) */
+  --text-secondary: #aaaaaa;   /* Texto secundário (cinza) */
+}
+
+/* Estilizando o corpo da pagina */
 body{
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(9,9,121,1) 100%);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
