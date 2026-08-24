@@ -1,27 +1,28 @@
-# Store
+# 🎮 PlayStation Store Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Este projeto é uma atividade extracurricular através dos cursos de tecnologia da **[DIO (Digital Innovation One)](https://www.dio.me/)**.
 
-## Development server
+O objetivo foi recriar o visual da loja oficial do PlayStation e transformar a página estática em uma aplicação viva e interativa!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🎯 O que foi feito no projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 🎨 **Visual inspirado na PlayStation:** Tela inicial moderna e organizada com banner principal e catálogo de jogos.
+- 🖼️ **Jogos e Capas Reais:** Conexão com um catálogo de jogos para puxar automaticamente os nomes, capas em alta qualidade e notas dos jogos mais populares do PS4 e PS5.
+- 🎬 **Trailer de Apresentação:** Um botão no banner principal que abre uma janela para assistir ao trailer do jogo direto na tela.
+- 🛒 **Links para a Loja Oficial:** Ao clicar no card de um jogo, você é direcionado para a página de busca oficial dele na PlayStation Store.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Ferramentas e Linguagens Utilizadas
 
-## Running unit tests
+- **Angular** (Estrutura e organização do projeto)
+- **TypeScript** (Lógica da aplicação)
+- **HTML5 & CSS3** (Criação e estilização das telas)
+- **API da RAWG** (Fonte dos dados e capas dos jogos reais)
+- **Git & GitHub** (Salvar e versionar o código)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+✨ *Desenvolvido por **Giovana Boni** durante os estudos na **DIO**.*
